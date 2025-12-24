@@ -76,3 +76,12 @@
   max-height: 80vh !important;
   width: auto !important;
 }
+
+// Vertically center all mermaid diagrams
+.reveal section:has(.cell-output-display .mermaid) {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+}

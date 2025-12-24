@@ -8,7 +8,7 @@
 
 腫瘤內科專科醫師 / Python × React Developer / Vimer
 
-## 今天的旅程 {.center-image}
+## 今天的旅程
 
 ```{mermaid}
 flowchart LR
