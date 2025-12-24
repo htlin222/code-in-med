@@ -4,8 +4,8 @@ project:
   render:
     - index.qmd
 
-title: "從白袍到鍵盤"
-subtitle: "給軟體人的醫療產業入門指南"
+title: "當醫師遇上 Code"
+subtitle: "醫療場域的溝通密碼"
 author: "林協霆"
 
 format:
