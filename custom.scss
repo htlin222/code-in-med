@@ -62,3 +62,26 @@
 .reveal h2 {
   font-size: 1.44em !important;
 }
+
+// Vertically center images on slides with only images
+.reveal section.center-image {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+.reveal section.center-image img {
+  max-height: 80vh !important;
+  width: auto !important;
+}
+
+// Vertically center all mermaid diagrams
+.reveal section:has(.cell-output-display .mermaid) {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+}
