@@ -1,0 +1,33 @@
+# Quarto output
+/.quarto/
+/_site/
+*_files/
+*.html
+
+# Node modules
+node_modules/
+
+# R/Python environments
+/renv/
+/.venv/
+/venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Subprojects
+quarto-presentation/

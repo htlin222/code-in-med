@@ -1,0 +1,37 @@
+project:
+  type: default
+  render:
+    - index.qmd
+
+title: "從白袍到鍵盤"
+subtitle: "給軟體人的醫療產業入門指南"
+author: "林協霆"
+
+format:
+  revealjs:
+    output-file: slides.html
+    theme: [default, custom.scss]
+    slide-number: true
+    code-line-numbers: true
+    simplemenu:
+      barhtml:
+        header: "<div class='menubar'><ul class='menu'></ul></div>"
+      flat: false
+      scale: 0.67
+    filters:
+      - reveal-auto-agenda
+      - code-fullscreen
+    revealjs-plugins:
+      - simplemenu
+      - codefocus
+    auto-agenda:
+      bullets: numbered
+      heading: Agenda
+    code-fullscreen: true
+  html:
+    output-file: index.html
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+    code-fold: true
+    code-tools: true
