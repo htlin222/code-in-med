@@ -1,8 +1,6 @@
 # Quarto output
 /.quarto/
 /_site/
-*_files/
-*.html
 
 # Node modules
 node_modules/

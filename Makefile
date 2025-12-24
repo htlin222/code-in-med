@@ -3,7 +3,7 @@
 # Default target
 all: render
 
-# Render both formats (outputs to project root)
+# Render to _site/
 render:
 	quarto render index.qmd
 
@@ -11,25 +11,21 @@ render:
 preview:
 	quarto preview index.qmd
 
-# Build for deployment (copy to _site)
-deploy:
-	quarto render index.qmd
-	mkdir -p _site
-	cp -r index.html slides.html index_files slides_files _site/ 2>/dev/null || true
-	cp -r custom.scss _site/ 2>/dev/null || true
+# Build for deployment (alias for render)
+deploy: render
 
 # Clean output
 clean:
-	rm -rf _site .quarto index.html slides.html index_files slides_files
+	rm -rf _site .quarto
 
 # Help
 help:
 	@echo "Usage:"
-	@echo "  make          - Build slides.html and index.html"
+	@echo "  make          - Build to _site/"
 	@echo "  make preview  - Live preview with auto-reload"
-	@echo "  make deploy   - Build and copy to _site/ for deployment"
+	@echo "  make deploy   - Build to _site/ for deployment"
 	@echo "  make clean    - Remove output files"
 	@echo ""
-	@echo "Output files:"
+	@echo "Output files in _site/:"
 	@echo "  index.html  - HTML page with TOC"
 	@echo "  slides.html - Revealjs presentation"
