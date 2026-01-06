@@ -85,3 +85,8 @@
   align-items: center !important;
   height: 100% !important;
 }
+
+// Add top padding for tables
+.reveal table {
+  margin-top: 1em !important;
+}
